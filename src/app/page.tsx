@@ -1,101 +1,46 @@
+import Footer from "./_components/Footer";
+import Header from "./_components/Header";
+import toggle from '../images/Vector (1).png'
+import weather from '../images/weather.png'
 import Image from "next/image";
-
+import Link from "next/link";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="">
+      <main className="">
+        <Header/>
+        <div className="p-5">
+          <div className="flex justify-between">
+            <div className="mt-2 ">
+            <Image src={toggle} alt="toggle" width={22.9} height={18.01}/>
+            </div>
+            <div className="space-x-[24px] ml-[100px]">
+              <Link className="font-[700] text-[#E21B22]" href={"/"}>Home</Link>
+              <Link className="font-[700] " href={"categories"}>Categories</Link>
+              <Link className="font-[700] " href={"irprime"}> IR Prime</Link>
+              <Link className="font-[700] " href={"events"}>Events</Link>
+              <Link className="font-[700] " href={"bookstore"}>Bookstore</Link>
+              <Link className="font-[700] " href={"newsletter"}>Newsletter</Link>
+              <Link className="font-[700] " href={"video"}>Video</Link>
+            </div>
+            <div className="flex space-x-2">
+              <Image src={weather} alt="weather" width={25.64} height={18.05}/>
+              <p className="text-[#616161] text-[15.79px] font-[400] font-lado">Friday, 30 June 2023</p>
+            </div>
+          </div>
         </div>
+        <div className="flex justify-center">
+          <p className="text-[#595959] font-inter text-[13px]">Fashion & Lifestyle</p>
+          <span className="h-[1px] w-[2px] rounded-full bg-[#E21B22] mt-[5px]"/>
+          <p className="text-[#595959] font-inter text-[13px]">Beauty & Wellness</p>
+          <p className="text-[#595959] font-inter text-[13px]">Food & Beverage</p>
+          <p className="text-[#595959] font-inter text-[13px]">Consumer Durables & IT</p>
+          <p className="text-[#595959] font-inter text-[13px]">Entertainment</p>
+          <p className="text-[#595959] font-inter text-[13px]">Home Decor & Furnishing</p>
+          <p className="text-[#595959] font-inter text-[13px]">Specialty Retail</p>
+        </div>
+        <Footer/>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }

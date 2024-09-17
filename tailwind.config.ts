@@ -12,7 +12,13 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: { 
+                "inter": ['Inter', 'sans-serif'] ,
+                "roboto":["Roboto",'sans-serif'],
+                'lado':["Lato",'sans-serif']
+            } 
     },
+    
   },
   plugins: [],
 };
