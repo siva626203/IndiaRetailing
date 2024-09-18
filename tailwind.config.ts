@@ -15,7 +15,8 @@ const config: Config = {
       fontFamily: { 
                 "inter": ['Inter', 'sans-serif'] ,
                 "roboto":["Roboto",'sans-serif'],
-                'lado':["Lato",'sans-serif']
+                'lado':["Lato",'sans-serif'],
+                'droid-sans':["droid-sans", 'sans-serif']
             } 
     },
     
