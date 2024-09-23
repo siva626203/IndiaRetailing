@@ -156,7 +156,7 @@ export default function Home() {
         <div className="mt-20 border-t-[1px] border-t-[#AAAAAA] pl-7">
             <h1 className="font-roboto text-[#121212] text-[20.12px] font-[500] line-[24.14px]">Web Specials</h1>
             <div className="bg-[#CC0000] w-[15.19px] h-[2.26px]  rounded-[5.64px] bg-fixed"></div>
-             <div className="w-[567.55px] h-[116.91px] absolute mt-[210px] ml-4 space-y-1">
+             <div className="w-[567.55px] h-[116.91px] absolute mt-[150px] ml-4 space-y-1">
             <p className="font-inter font-[700] text-[18.28px] line-[24.05px] text-[#FFFFFF]">Rahul Gandhi In Manipur: Chopper Ride After Women Protesters Surround Car</p>
             <p className="text-[16.85px] font-[400] line-[25.28px] text-[#FFFFFFCC] font-droid-sans">Rahul Gandhi</p>
             </div>
